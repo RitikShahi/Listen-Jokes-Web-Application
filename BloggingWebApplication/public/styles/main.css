@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(189, 169, 130);
+}
+
+main {
+    flex: 1; 
+}
+
+footer {
+    background: #222; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.Intro{
+    position:absolute;
+    top: 18px;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+input[type="submit"][name="button1"] {
+    background-color: #ffcc00; /* Yellow */
+    color: #000; /* Black text */
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.Creation{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid whitesmoke;
+    border-radius: 1%;
+}
+input[type="submit"][name="Edit"] {
+    background-color: #818181; 
+    color: #000; 
+    font-weight: bold;
+    padding: 2px 2px;
+    border: 1px solid black;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+input[type="submit"][name="Delete"] {
+    background-color: #818181; 
+    color: #000; 
+    font-weight: bold;
+    padding: 2px 2px;
+    border: 1px solid black;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
