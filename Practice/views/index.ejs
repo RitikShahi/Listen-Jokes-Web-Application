@@ -1,0 +1,50 @@
+<%- include("header.ejs") %>
+<br>
+<br>
+<br>
+<div class="kalakaar">
+<div class="cantt">
+    <form action="/" method="POST" class="stylus forum">
+        <span class="paragraph ">SELECT CATEGORY :-</span>
+        <div class="parts forum parts"><input type="checkbox" name="category" value="programming"> Pro
+        <input type="checkbox" name="category" value="miscellaneous"> Miscellaneous
+        <input type="checkbox" name="category" value="dark"> Dark
+        <input type="checkbox" name="category" value="pun"> Pun
+        <input type="checkbox" name="category" value="spooky"> Spooky
+        <input type="checkbox" name="category" value="christmas"> Christmas</div>
+        <br>
+        <span class="paragraph ">FLAGS TO BLACKLIST :-</span>
+        <div class="parts forum parts"><input type="checkbox"  value="Religious"> Religious
+        <input type="checkbox" name="blacklistFlags" value="Sexist"> Sexist
+        <input type="checkbox" name="blacklistFlags" value="Political"> Political
+        <input type="checkbox" name="blacklistFlags" value="Racist"> Racist
+        <input type="checkbox" name="blacklistFlags" value="Explicit"> Explicit
+        <input type="checkbox" name="blacklistFlags" value="NSFW"> NSFW</div>
+        <br>
+        <span class="paragraph ">JOKE TYPE :-</span>
+        <div class="parts forum parts">
+        <input type="radio" name="type" value="single"> Single
+        <input type="radio" name="type" value="twopart"> TwoPart </div>
+        <br>
+        <button class="button1">GENERATE</button>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <% if (locals.joke) { %>  
+        <!-- Single joke type -->
+        <p><strong>Joke:</strong> <em><%= joke %></em></p>
+    <% } else if (setup && delivery) { %>  
+        <!-- Two-part joke type -->
+        <p><strong>A:</strong> <em><%= setup %></em> </p>
+        <p><strong>B:</strong> <em><%= delivery %></em></p>
+    <% } else { %>  
+        <!-- If no joke is available -->
+        <p>No joke found. Try again!</p>
+    <% } %>
+</div>
+</div>
+<%- include("footer.ejs") %>

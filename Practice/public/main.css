@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(16, 63, 105);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+main{
+    flex: 1;
+}
+.elements{
+    text-align: center;
+    font-family: monospace;
+    color: rgb(226, 230, 233);
+}
+.foot{
+    font-size: 20px;
+    
+}
+header{
+    background-color: rgb(16, 16, 98);
+}
+footer{
+    background-color: rgb(16, 16, 98);
+}
+.container{
+    height: 200px;
+    width: 700px;
+    background-color: rgb(158, 166, 172);
+    border: 2px solid black;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+.paragraph{
+    font-size: medium;
+    color: rgb(0, 255, 8);
+}
+.stylus{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(8, 242, 207);
+}
+
+.button1{
+    border: 2px solid black;
+    border-radius: 8px;
+    display: block;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    left: 660px;
+}
+.parts{
+    border-radius: 8px;
+    border: 1px solid rgb(252, 254, 255);
+    padding: 4px;
+}
+.kalakaar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
